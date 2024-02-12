@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="511.0" prefWidth="816.0" stylesheets="@Button.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Plantilla2Controller">
+   <children>
+      <AnchorPane prefHeight="585.0" prefWidth="842.0">
+         <children>
+
+            <Button fx:id="add" layoutX="511.0" layoutY="202.0" mnemonicParsing="false" onAction="#OnActionAddTask" prefHeight="45.0" prefWidth="150.0" styleClass="BtnRegister" text="Add">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+            <AnchorPane layoutY="35.0" prefHeight="80.0" prefWidth="842.0" style="-fx-background-color: A9F9D7;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resources/images/Logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="labelName" contentDisplay="CENTER" layoutX="346.0" layoutY="43.0" prefHeight="64.0" prefWidth="150.0" text="Tasks" textAlignment="CENTER" textFill="#000302">
+                     <font>
+                        <Font name="System Italic" size="52.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="648.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resources/images/Logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Button fx:id="ButtonUpdate" layoutX="80.0" layoutY="200.0" mnemonicParsing="false" onAction="#OnActionUpdate" prefHeight="40.0" prefWidth="126.0" style="-fx-background-radius: 20,20,20,20;">
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resources/images/update.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <TableView fx:id="PTableTask" layoutX="28.0" layoutY="260.0" prefHeight="266.0" prefWidth="798.0">
+              <columns>
+                <TableColumn fx:id="NombreTaskColumn" prefWidth="139.99997520446777" text="NAME" />
+                <TableColumn fx:id="EstadoTaskColumn" prefWidth="153.5999755859375" text="STATUS" />
+                  <TableColumn fx:id="PrioritiTaskColumn" prefWidth="176.79998779296875" text="PRIORITY" />
+                  <TableColumn fx:id="CreationdateTaskColum" prefWidth="158.39999389648438" text="CREATION DATE" />
+                  <TableColumn fx:id="ExpirationdateTaskColum" prefWidth="171.199951171875" text="EXPIRATION DATE" />
+              </columns>
+            </TableView>
+            <Button layoutX="225.0" layoutY="201.0" mnemonicParsing="false" onAction="#OnActionDelete" prefHeight="42.0" prefWidth="126.0" style="-fx-background-radius: 20,20,20,20;">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resources/images/delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ComboBox fx:id="myComboBox2" layoutX="677.0" layoutY="205.0" onAction="#comboBox" prefHeight="40.0" prefWidth="150.0" promptText="Status" />
+            <Button fx:id="Back" layoutX="7.0" layoutY="538.0" mnemonicParsing="false" onAction="#TaskOnActionBack" prefHeight="30.0" prefWidth="94.0" styleClass="BtnRegister" text="Back">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

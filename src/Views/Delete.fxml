@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="603.0" prefWidth="627.0" stylesheets="@Button.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.DeleteController">
+   <children>
+      <AnchorPane prefHeight="606.0" prefWidth="626.0" style="-fx-background-color: A9F9D7;">
+         <children>
+            <Label layoutX="50.0" layoutY="25.0" prefHeight="16.0" prefWidth="183.0" text="Name">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TaskNameUpd" layoutX="50.0" layoutY="50.0" prefHeight="54.0" prefWidth="531.0" promptText="insert new task here" />
+            <Label layoutX="52.0" layoutY="114.0" prefHeight="16.0" prefWidth="183.0" text="Notes">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TaskNotesUpd" layoutX="46.0" layoutY="152.0" prefHeight="142.0" prefWidth="531.0" promptText="Add Notes" />
+            <Label layoutX="52.0" layoutY="416.0" prefHeight="16.0" prefWidth="183.0" text="Date initiation">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="TaskFechaInicioUpd" layoutX="52.0" layoutY="454.0" prefHeight="36.0" prefWidth="232.0" />
+            <Label layoutX="352.0" layoutY="416.0" prefHeight="16.0" prefWidth="183.0" text="Final date ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="TaskFechaFinalUpd" layoutX="345.0" layoutY="454.0" prefHeight="36.0" prefWidth="232.0" />
+            <Button layoutX="423.0" layoutY="534.0" mnemonicParsing="false" onAction="#OnActionTaskUpdate" prefHeight="46.0" prefWidth="132.0" styleClass="BtnRegister" text="UPDATE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="back" layoutX="61.0" layoutY="534.0" mnemonicParsing="false" onAction="#OnActionBackUpdate" prefHeight="46.0" prefWidth="132.0" styleClass="BtnRegister" text="BACK">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="myComboBoxPriority" layoutX="53.0" layoutY="331.0" prefHeight="36.0" prefWidth="183.0" promptText="Priority">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+            <ComboBox fx:id="myComboBoxStatus" layoutX="397.0" layoutY="331.0" prefHeight="36.0" prefWidth="183.0" promptText="Statu">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

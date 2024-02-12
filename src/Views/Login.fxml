@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="624.0" stylesheets="@Button.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginController">
+   <children>
+      <AnchorPane layoutX="-2.0" prefHeight="550.0" prefWidth="338.0" style="-fx-background-color: A9F9D7;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a9f9d7" height="234.0" layoutX="52.0" layoutY="158.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-width: 4;" width="267.0" />
+            <ImageView fitHeight="288.0" fitWidth="276.0" layoutX="52.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/images/Logo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="register" layoutX="22.0" layoutY="448.0" mnemonicParsing="false" onAction="#OnActionCreateRegister" prefHeight="26.0" prefWidth="334.0" styleClass="BtnCreateRegister" text="Do you not have an account? SignIn" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="366.0" layoutY="214.0" text="User Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="366.0" layoutY="296.0" text="Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginButton" layoutX="369.0" layoutY="389.0" mnemonicParsing="false" onAction="#OnActionLogin" prefHeight="37.0" prefWidth="215.0" styleClass="BtnRegister" text="Lon In">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelButton" layoutX="369.0" layoutY="447.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="215.0" styleClass="BtnRegister" text="Cancel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="146.0" fitWidth="187.0" layoutX="404.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/images/Logo.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="LoginPassword" layoutX="366.0" layoutY="324.0" prefHeight="33.0" prefWidth="215.0" promptText="Password" style="-fx-background-color: #0000;" />
+      <TextField layoutX="199.0" layoutY="174.0" visible="false">
+         <opaqueInsets>
+            <Insets bottom="10.0" left="20.0" right="10.0" top="20.0" />
+         </opaqueInsets></TextField>
+      <TextField fx:id="LoginName" layoutX="369.0" layoutY="242.0" prefHeight="33.0" prefWidth="208.0" promptText="User Name" style="-fx-background-color: #0000;" />
+      <Separator layoutX="366.0" layoutY="273.0" prefHeight="3.0" prefWidth="208.0" style="-fx-background-color: #A9F9D7;" />
+      <Separator layoutX="366.0" layoutY="356.0" prefHeight="3.0" prefWidth="208.0" style="-fx-background-color: #A9F9D7;" />
+   </children>
+</AnchorPane>

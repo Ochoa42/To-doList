@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="585.0" prefWidth="842.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Plantilla1Controller">
+  <children>
+    <AnchorPane prefHeight="585.0" prefWidth="842.0">
+      <children>
+        <AnchorPane layoutY="35.0" prefHeight="80.0" prefWidth="842.0" style="-fx-background-color: A9F9D7;">
+          <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="44.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../Resources/images/Logo.png" />
+              </image>
+            </ImageView>
+            <Label layoutX="287.0" layoutY="40.0" prefHeight="62.0" prefWidth="240.0" text="ToDo-list" textAlignment="CENTER" textFill="#000302">
+              <font>
+                <Font name="System Italic" size="52.0" />
+              </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="648.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../Resources/images/Logo.png" />
+              </image>
+            </ImageView>
+          </children>
+        </AnchorPane>
+            <Button fx:id="List1" layoutX="222.0" layoutY="246.0" mnemonicParsing="false" onAction="#OnActionTasksTrabajo" prefHeight="47.0" prefWidth="399.0" text="Tareas de Trabajo" />
+            <Button fx:id="List2" layoutX="222.0" layoutY="392.0" mnemonicParsing="false" onAction="#OnActionTasksCasa" prefHeight="47.0" prefWidth="399.0" text="Tareas de Casa" />
+            <Button fx:id="List3" layoutX="222.0" layoutY="321.0" mnemonicParsing="false" onAction="#OnActionTasksEstudio" prefHeight="47.0" prefWidth="399.0" text="Tareas de Estudio" />
+            <Button fx:id="LogOut" layoutX="365.0" layoutY="497.0" mnemonicParsing="false" onAction="#ListOnActionBack" prefHeight="34.0" prefWidth="112.0" text="LOG OUT" />
+
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>
